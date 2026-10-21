@@ -1,0 +1,1 @@
+dotnet run --project "C:\Users\Aluno\tcc-exercicios\2\SegmentarObjeto.csproj" -- "C:\Users\Aluno\tcc-exercicios\2\Imagem_segmento.png"
