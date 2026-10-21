@@ -1,0 +1,15 @@
+C:\Users\Aluno\tcc-exercicios\2\obj\Debug\net7.0-windows\SegmentarObjeto.csproj.AssemblyReference.cache
+C:\Users\Aluno\tcc-exercicios\2\obj\Debug\net7.0-windows\SegmentarObjeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\tcc-exercicios\2\obj\Debug\net7.0-windows\SegmentarObjeto.AssemblyInfoInputs.cache
+C:\Users\Aluno\tcc-exercicios\2\obj\Debug\net7.0-windows\SegmentarObjeto.AssemblyInfo.cs
+C:\Users\Aluno\tcc-exercicios\2\obj\Debug\net7.0-windows\SegmentarObjeto.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\tcc-exercicios\2\bin\Debug\net7.0-windows\SegmentarObjeto.exe
+C:\Users\Aluno\tcc-exercicios\2\bin\Debug\net7.0-windows\SegmentarObjeto.deps.json
+C:\Users\Aluno\tcc-exercicios\2\bin\Debug\net7.0-windows\SegmentarObjeto.runtimeconfig.json
+C:\Users\Aluno\tcc-exercicios\2\bin\Debug\net7.0-windows\SegmentarObjeto.dll
+C:\Users\Aluno\tcc-exercicios\2\bin\Debug\net7.0-windows\SegmentarObjeto.pdb
+C:\Users\Aluno\tcc-exercicios\2\obj\Debug\net7.0-windows\SegmentarObjeto.dll
+C:\Users\Aluno\tcc-exercicios\2\obj\Debug\net7.0-windows\refint\SegmentarObjeto.dll
+C:\Users\Aluno\tcc-exercicios\2\obj\Debug\net7.0-windows\SegmentarObjeto.pdb
+C:\Users\Aluno\tcc-exercicios\2\obj\Debug\net7.0-windows\SegmentarObjeto.genruntimeconfig.cache
+C:\Users\Aluno\tcc-exercicios\2\obj\Debug\net7.0-windows\ref\SegmentarObjeto.dll
