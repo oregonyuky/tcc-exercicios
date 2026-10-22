@@ -13,11 +13,9 @@ public class ReduzirEscaCinza{
             for(int i=0;i<height;i++){
                 for(int j=0;j<width;j++){
                     byte* auxS = src + (i * sS) + (j * 3);
-                    byte pixel = (byte)((auxS[0]+auxS[1]+auxS[2])/3);
                     byte* auxD = dst + (i * sD) + (j * 3);
-                    auxD[0] = pixel;
-                    auxD[1] = pixel;
-                    auxD[2] = pixel;
+                    int pixel = (int)((auxS[0]+auxS[1]+auxS[2])/3);
+                    auxD[0] = auxD[1] = auxD[2] = calcularNovoGr(pixel, valor);
                 }
             }
         }
@@ -25,5 +23,12 @@ public class ReduzirEscaCinza{
             imgS.UnlockBits(bmS);
             imgD.UnlockBits(bmD);
         }
+    }
+
+    public static int calcularNovoGr(int gr, int valor){
+        int i=0;
+        while(gr >= i*256/valor)i++;
+        return (i-1)*255/(valor-1);
+
     }
 }
