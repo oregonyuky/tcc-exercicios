@@ -62,9 +62,7 @@ public static void Pruning(bool[,] img, int tamanhoMaximo) {
                 }
 
                 // Chegou a outra extremidade ou a um pixel isolado
-                if (vizinhos.Count <= 1)
-                    break;
-
+                if (vizinhos.Count <= 1 && caminho.Count > 1) break;
                 Point proximo = new Point(-1, -1);
 
                 foreach (Point p in vizinhos) {
@@ -73,6 +71,7 @@ public static void Pruning(bool[,] img, int tamanhoMaximo) {
                         break;
                     }
                 }
+                
                 if (proximo.X == -1)
                     break;
                 anterior = atual;

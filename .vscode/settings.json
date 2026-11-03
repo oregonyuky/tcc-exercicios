@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^mcs -unsafe -r:System\\.Drawing -out:/tmp/Conectividade\\.exe 2/Conectividade\\.cs 2/Fila\\.cs 2/No\\.cs 2/NoFila\\.cs$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
