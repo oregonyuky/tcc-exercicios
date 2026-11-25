@@ -15,15 +15,13 @@ public class TDC{
         if(x==0)return 1.0/Math.sqrt(N);
         return Math.sqrt(2.0/N);
     }
-    public unsafe void dilatacao(Bitmap imgS, Bitmap imgD){
+    public unsafe void tdc(Bitmap imgS, Bitmap imgD){
         int width = imgS.Width;
         int height = imgS.Height;
         Rectangle r = new Rectangle(0,0,width,height);
         BitmapData *bmS = imgS.LockBits(r, ImageLockMode.ReadOnly, PixelFormat.Format24bppRgb);
         BitmapData *bmD = imgD.LockBits(r, ImageLockMode.ReadOnly, PixelFormat.Format24bppRgb);
         int N = 8;
-        int i = ?
-        int j = ?
         double[,] C = new double[N, N];
         for(int i=0;i<N;i++){
             for(int j=0;j<N;j++){
@@ -36,6 +34,27 @@ public class TDC{
                     }
                 }
 
+            }
+        }
+    }
+    public unsafe void quantização(Bitmap imgS, Bitmap imgD){
+        int width = imgS.Width;
+        int height = imgS.Height;
+        Rectangle r = new Rectangle(0,0,width,height);
+        BitmapData *bmS = imgS.LockBits(r, ImageLockMode.ReadOnly, PixelFormat.Format24bppRgb);
+        BitmapData *bmD = imgD.LockBits(r, ImageLockMode.ReadOnly, PixelFormat.Format24bppRgb);
+        int N = 8;
+        int fator_de_qualidade = 2;
+        int[,] Q = new int[N, N];
+        double[,] Valor_quantizado = new double[N, N];
+        for(int i=0;i<N;i++){
+            for(int j=0;j<N;j++){
+                Q[i, j] = 1 + (1 + i + j) * fator_de_qualidade;
+            }
+        }
+        for(int i=0;i<N;i++){
+            for(int j=0;j<N;j++){
+                Valor_quantizado[i, j] = C[i, j] / Q[i, j]; 
             }
         }
     }
